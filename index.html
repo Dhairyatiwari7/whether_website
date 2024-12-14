@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="sub-container">
+                <div class="temperature">
+                    <p id="temp">25°C</p>
+                </div>
+                <div class="time_location">
+                    <p id="location" class="loc">Mumbai</p>
+                    <p id="time" class="dat">12:58 Wednesday 2024-12-13</p>
+                </div>
+                <div class="condition">
+                    <p id="condition">Cloudy</p>
+                </div>
+            </div>
+            <nav class="search">
+                <!-- Search Bar -->
+                <form id="search-form" style="display: flex; align-items: center;">
+                    <input 
+                        id="srch_area"
+                        type="text" 
+                        name="location" 
+                        placeholder="Enter location" 
+                        style="flex: 1; padding: 5px 10px; border: 1px solid #cccccc; border-radius: 5px 0 0 5px; font-size: 14px;" 
+                        required 
+                    />
+                    <button 
+                        type="submit" 
+                        class="button1"
+                        style="display: flex; align-items: center; background-color: #f0f0f0; border: 1px solid #cccccc; border-left: none; border-radius: 0 5px 5px 0; padding: 5px 10px; cursor: pointer;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="7" cy="7" r="5" />
+                            <line x1="11" y1="11" x2="15" y2="15" />
+                        </svg>
+                    </button>
+                </form>
+            </nav>
+        </div>
+        <footer>
+            <p>&copy; 2024 Weather App. All Rights Reserved.</p>
+            <div class="extra">
+                <p>Built with care for better weather updates.</p>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- Include external JS -->
+    <script src="script.js"></script>
+</body>
+</html>
